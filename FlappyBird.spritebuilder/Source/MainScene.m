@@ -8,7 +8,6 @@
 
 #import "MainScene.h"
 #import "Obstacle.h"
-#import "GamePlayScene.h"
 
 @interface CGPointObject : NSObject
 {
