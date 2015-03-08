@@ -8,6 +8,7 @@
 
 #import "MainScene.h"
 #import "Obstacle.h"
+#import "GamePlayScene.h"
 
 @interface CGPointObject : NSObject
 {
@@ -99,7 +100,7 @@
 
 #pragma mark - Touch Handling
 
-- (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
+- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
     if (!_gameOver) {
         [character.physicsBody applyAngularImpulse:10000.f];
         _sinceTouch = 0.f;
